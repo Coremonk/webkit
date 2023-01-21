@@ -22,7 +22,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, DIR_OUTPUT_PATH),
         // filename: '[name].bundle.js',
-        filename: 'js/' + "[name].bundle.js",
+        filename: 'js/' + "[name].[hash].bundle.js",
         // chunkFilename: './js/chunkFilename.[name].bundle.js',   // prepend folder name
         clean: true,
     },
@@ -31,7 +31,7 @@ module.exports = {
 			languages: ['typescript', 'javascript', 'css']
 		}),
         new MiniCssExtractPlugin({ 
-            filename: 'css/' + "[name].css",
+            filename: 'css/' + "[name].[hash].css",
             // chunkFilename: 'css/[name].[id].css',    // prepend folder name
             ignoreOrder: false,    
         }),
@@ -83,7 +83,7 @@ module.exports = {
 				use: {
                     loader: "file-loader",
                     options: {
-                      name: "[name].[ext]",
+                      name: "[name].[hash].[ext]",
                       outputPath: 'fonts'  // folder name
                     }
                 }
@@ -93,7 +93,7 @@ module.exports = {
                 use: {
                   loader: "file-loader",
                   options: {
-                    name: "[name].[ext]",
+                    name: "[name].[hash].[ext]",
                     outputPath: 'images'  // folder name
                   }
                 }

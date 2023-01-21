@@ -1,0 +1,40 @@
+{
+  "name": "webpack_frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --watch --mode development --progress",
+    "prod": "webpack --mode production --watch --progress"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "autosize": "^5.0.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.3",
+    "css-minimizer-webpack-plugin": "^4.2.2",
+    "file-loader": "^6.2.0",
+    "imask": "^6.4.3",
+    "mini-css-extract-plugin": "^2.7.2",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "postcss-loader": "^7.0.2",
+    "sass": "^1.57.1",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "typescript": "^4.9.4",
+    "webpack": "^5.75.0",
+    "webpack-bundle-tracker": "^1.8.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "@tabler/core": "github:tabler/tabler",
+    "alpinejs": "^3.11.1",
+    "htmx.org": "^1.8.5",
+    "monaco-editor": "^0.34.1",
+    "monaco-editor-webpack-plugin": "^7.0.1"
+  }
+}
